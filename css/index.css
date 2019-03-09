@@ -149,6 +149,14 @@ footer nav a {
 SH Code starts here!
 -----------------------------------*/
 
+body {
+    padding: 0 10%;
+}
+
+.container {
+    width: 100%;
+}
+
 a:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -161,6 +169,10 @@ hr {
 
 button:hover {
     cursor: pointer;
+}
+
+header, section, footer {
+    width: 100%;
 }
 
 header {
@@ -236,6 +248,14 @@ header img {
     background: dodgerblue;
 }
 
+.box {
+    animation: jumpUp 3s infinite ease-in-out;
+}
+
+.bottom-content .text-container {
+    width: 33%;
+}
+
 /*------------------------------
 About page specific CSS 
 ----------------------------*/
@@ -275,9 +295,44 @@ About page specific CSS
     margin-bottom: 7px;
 }
 
-
-
-
 .ending-note {
     margin: 30px 0;
+}
+
+/*-----------------------------
+MEDIA
+------------------------------*/
+@media(max-width:750px) {
+    header nav {
+        flex-flow: column nowrap;
+    }
+    .top-content .text-container, .bottom-content, .bottom-content .text-container {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+/*--------------------------------
+ANIMATIONS
+-------------------------------*/
+
+@keyframes jumpUp {
+    0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(40px);
+        -webkit-transform: translateY(40px);
+    }
+    75% {
+        transform: translateY(0px) rotate(180deg);
+        -webkit-transform: translateY(0px) rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
 }
