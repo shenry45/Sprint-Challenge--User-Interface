@@ -148,6 +148,11 @@ footer nav a {
 /*----------------------------------
 SH Code starts here!
 -----------------------------------*/
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 header {
     margin: 20px 0;
 }
@@ -179,7 +184,7 @@ header nav {
     align-items: flex-end;
 }
 
-header nav a{
+header nav a {
     color: #000;
     text-decoration: none;
     font-size: 14px;
@@ -188,4 +193,35 @@ header nav a{
 header img {
     display: block; 
     width: 100%;
+}
+
+.middle-content .boxes .box1 {
+    background:teal;
+}
+.middle-content .boxes .box2 {
+    background: gold;
+}
+.middle-content .boxes .box3 {
+    background: cadetblue;
+}
+.middle-content .boxes .box4 {
+    background: coral;
+}
+.middle-content .boxes .box5 {
+    background: crimson;
+}
+.middle-content .boxes .box6 {
+    background: forestgreen;
+}
+.middle-content .boxes .box7 {
+    background: darkorchid;
+}
+.middle-content .boxes .box8 {
+    background: hotpink;
+}
+.middle-content .boxes .box9 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: dodgerblue;
 }
