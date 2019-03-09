@@ -300,6 +300,30 @@ About page specific CSS
 }
 
 /*-----------------------------
+Contact Page specific
+------------------------------*/
+.message {
+    margin: 30px 0;
+}
+
+.message label {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.message input, .message textarea, .message select{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.message input[type="submit"] {
+    display: block;
+}
+
+
+/*-----------------------------
 MEDIA
 ------------------------------*/
 @media(max-width:750px) {
