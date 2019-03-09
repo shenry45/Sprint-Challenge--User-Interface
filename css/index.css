@@ -266,13 +266,14 @@ About page specific CSS
     justify-content: space-between;
 }
 .about-topics div {
-    width: 50%;
+    width: 48%;
     padding-bottom: 15px;
     border-bottom: 1px dashed #000;
     margin: 20px 0;
 }
 
 .about-topics div img {
+    width: 100%;
     margin-bottom: 10px;
 }
 
