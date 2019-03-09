@@ -148,8 +148,18 @@ footer nav a {
 /*----------------------------------
 SH Code starts here!
 -----------------------------------*/
+
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    border-top: 1px dashed #000;
+    margin: 25px 0 0;
+}
+
+button:hover {
     cursor: pointer;
 }
 
@@ -224,4 +234,50 @@ header img {
 }
 .middle-content .boxes .box10 {
     background: dodgerblue;
+}
+
+/*------------------------------
+About page specific CSS 
+----------------------------*/
+
+.about-topics {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.about-topics div {
+    width: 50%;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #000;
+    margin: 20px 0;
+}
+
+.about-topics div img {
+    margin-bottom: 10px;
+}
+
+.about-topics div h3 {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.about-topics div p {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-topics div button {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 7px;
+}
+
+
+
+
+.ending-note {
+    margin: 30px 0;
 }
