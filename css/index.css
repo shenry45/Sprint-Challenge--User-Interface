@@ -144,3 +144,220 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*----------------------------------
+SH Code starts here!
+-----------------------------------*/
+
+body {
+    padding: 0 10%;
+}
+
+.container {
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    border-top: 1px dashed #000;
+    margin: 25px 0 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header, section, footer {
+    width: 100%;
+}
+
+header {
+    margin: 20px 0;
+}
+
+header div.top {
+    margin-bottom: 40px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+}
+
+header div img#logo {
+    width: 20%;
+}
+
+header .nav {
+    width: 80%;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+header nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header img {
+    display: block; 
+    width: 100%;
+}
+
+.middle-content .boxes .box1 {
+    background:teal;
+}
+.middle-content .boxes .box2 {
+    background: gold;
+}
+.middle-content .boxes .box3 {
+    background: cadetblue;
+}
+.middle-content .boxes .box4 {
+    background: coral;
+}
+.middle-content .boxes .box5 {
+    background: crimson;
+}
+.middle-content .boxes .box6 {
+    background: forestgreen;
+}
+.middle-content .boxes .box7 {
+    background: darkorchid;
+}
+.middle-content .boxes .box8 {
+    background: hotpink;
+}
+.middle-content .boxes .box9 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: dodgerblue;
+}
+
+.box {
+    animation: jumpUp 3s infinite ease-in-out;
+}
+
+.bottom-content .text-container {
+    width: 33%;
+}
+
+/*------------------------------
+About page specific CSS 
+----------------------------*/
+
+.about-topics {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.about-topics div {
+    width: 48%;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #000;
+    margin: 20px 0;
+}
+
+.about-topics div img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.about-topics div h3 {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.about-topics div p {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-topics div button {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 7px;
+}
+
+.ending-note {
+    margin: 30px 0;
+}
+
+/*-----------------------------
+Contact Page specific
+------------------------------*/
+.message {
+    margin: 30px 0;
+}
+
+.message label {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.message input, .message textarea, .message select{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.message input[type="submit"] {
+    display: block;
+}
+
+
+/*-----------------------------
+MEDIA
+------------------------------*/
+@media(max-width:750px) {
+    header nav {
+        flex-flow: column nowrap;
+    }
+    .top-content .text-container, .bottom-content, .bottom-content .text-container {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+/*--------------------------------
+ANIMATIONS
+-------------------------------*/
+
+@keyframes jumpUp {
+    0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(40px);
+        -webkit-transform: translateY(40px);
+    }
+    75% {
+        transform: translateY(0px) rotate(180deg);
+        -webkit-transform: translateY(0px) rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
